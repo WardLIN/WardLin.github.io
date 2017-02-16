@@ -5,9 +5,57 @@
     <description>talk less and do more</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 16 Feb 2017 15:10:11 +0800</pubDate>
-    <lastBuildDate>Thu, 16 Feb 2017 15:10:11 +0800</lastBuildDate>
+    <pubDate>Thu, 16 Feb 2017 19:17:44 +0800</pubDate>
+    <lastBuildDate>Thu, 16 Feb 2017 19:17:44 +0800</lastBuildDate>
     <generator>Jekyll v3.4.0</generator>
+    
+      <item>
+        <title>在标签页头部插入个性图标</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#1浏览器通用方法&quot; id=&quot;markdown-toc-1浏览器通用方法&quot;&gt;1.浏览器通用方法&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#2ie或tt浏览器&quot; id=&quot;markdown-toc-2ie或tt浏览器&quot;&gt;2.IE或TT浏览器&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#3firefox浏览器&quot; id=&quot;markdown-toc-3firefox浏览器&quot;&gt;3.Firefox浏览器&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;1浏览器通用方法&quot;&gt;1.浏览器通用方法&lt;/h2&gt;
+&lt;p&gt;把favicon.ico图标放到网站根目录下，在网页的’&amp;lt;head&amp;gt;&amp;lt;/head&amp;gt;‘中加入&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;link rel=&quot;shortcut icon&quot; href=&quot;favicon.ico&quot; type=&quot;image/x-icon&quot; /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;2ie或tt浏览器&quot;&gt;2.IE或TT浏览器&lt;/h2&gt;
+&lt;p&gt;把需要显示的16x16像素的ICO图标命名为favicon.ico放置在网站根目录下，浏览器会自动检索&lt;/p&gt;
+
+&lt;h2 id=&quot;3firefox浏览器&quot;&gt;3.Firefox浏览器&lt;/h2&gt;
+&lt;p&gt;图标格式没有IE那么严格，GIF和PNG格式的图标也可以显示，图标名称也可以不是favcion&lt;/p&gt;
+
+&lt;p&gt;把图标放在根目录后，在&amp;lt;head&amp;gt;&amp;lt;/head&amp;gt;中加入&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;link rel=&quot;shortcut icon&quot; href=&quot;favicon.ico&quot; type=&quot;image/x-icon&quot; /&amp;gt;
+&amp;lt;link rel=&quot;icon&quot; href=&quot;gif_favicon.gif&quot; type=&quot;image/gif&quot; &amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;或&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;link rel=&quot;shortcut icon&quot; href=&quot;favicon.ico&quot; type=&quot;image/x-icon&quot; /&amp;gt;
+&amp;lt;link rel=&quot;icon&quot; href=&quot;png_favicon.png&quot; type=&quot; image/png&quot; &amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;实际上现在只要在网站根目录下放置一个faviocn.ico，浏览器都能识别了。&lt;/em&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 16 Feb 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/02/16/put-personal-icon-into-TAB's-header/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/02/16/put-personal-icon-into-TAB's-header/</guid>
+        
+        <category>icon</category>
+        
+        
+        <category>html</category>
+        
+      </item>
     
       <item>
         <title>如何将本地仓库的新版本推送到github上</title>

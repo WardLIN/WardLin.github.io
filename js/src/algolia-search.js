@@ -1,5 +1,6 @@
 /* global instantsearch: true */
 /*jshint camelcase: false */
+
 $(document).ready(function () {
   var CONFIG = {
         root: '/',
@@ -8,7 +9,7 @@ $(document).ready(function () {
             apiKey: '99ecd8391d90bacc026b05222f34fbd1',
             indexName: 'wardlin',
             hits: { "per_page": 10 },
-            labels: { "input_placeholder": "输入关键字", "hits_empty": "未发现与 「${query}」相关的内容", "hits_stats": "${hits} 条相关条目，使用了 ${time} 毫秒" }
+            labels: { "input_placeholder": "Searching...", "hits_empty": "未发现与 「${query}」相关的内容", "hits_stats": "${hits} 条相关条目，使用了 ${time} 毫秒" }
         }
     };
   var algoliaSettings = CONFIG.algolia;
@@ -46,9 +47,9 @@ $(document).ready(function () {
       hitsPerPage: algoliaSettings.hits.per_page || 10,
       templates: {
         item: function (data) {
-          var link = data.permalink ? data.permalink : (CONFIG.root + data.path);
+          var link = data.permalink ? data.permalink : data.slug;
           return (
-            '<a href="' + link + '" class="algolia-hit-item-link">' +
+            '<a href="' + link + '/" class="algolia-hit-item-link">' +
               data._highlightResult.title.value +
             '</a>'
           );

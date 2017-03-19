@@ -1,7 +1,16 @@
 /* global instantsearch: true */
 /*jshint camelcase: false */
-
 $(document).ready(function () {
+  var CONFIG = {
+        root: '/',
+        algolia: {
+            applicationID: 'G540V300PN',
+            apiKey: '99ecd8391d90bacc026b05222f34fbd1',
+            indexName: 'wardlin',
+            hits: { "per_page": 10 },
+            labels: { "input_placeholder": "输入关键字", "hits_empty": "未发现与 「${query}」相关的内容", "hits_stats": "${hits} 条相关条目，使用了 ${time} 毫秒" }
+        }
+    };
   var algoliaSettings = CONFIG.algolia;
   var isAlgoliaSettingsValid = algoliaSettings.applicationID &&
                                algoliaSettings.apiKey &&

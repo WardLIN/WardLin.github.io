@@ -1,12 +1,408 @@
-<?xml version="1.0" encoding="utf-8"?>
-<search>
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="hexo,github,blog,next," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="前言&amp;emsp;&amp;emsp;一直想自己搞个人博客，在上面记录一些自己的日常！如今，github提供了免费的域名和空间，用户可以通过username.github.io来设置自己的个人主页或博客，虽然是静态的，但是聊胜于无啊。利用github pages的特性，一开始我使用jekyll来构造整个博客静态网站，但是使用了一阵子发现有不小的局限性以及扩展性不强，于是迁移到了生态圈更大的hexo,套用了简">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo+github搭建个人博客(绑定域名)">
+<meta property="og:url" content="http://wardlin.github.io/hexo+github搭建个人博客(绑定域名)/index.html">
+<meta property="og:site_name" content="wardlin's blog">
+<meta property="og:description" content="前言&amp;emsp;&amp;emsp;一直想自己搞个人博客，在上面记录一些自己的日常！如今，github提供了免费的域名和空间，用户可以通过username.github.io来设置自己的个人主页或博客，虽然是静态的，但是聊胜于无啊。利用github pages的特性，一开始我使用jekyll来构造整个博客静态网站，但是使用了一阵子发现有不小的局限性以及扩展性不强，于是迁移到了生态圈更大的hexo,套用了简">
+<meta property="og:image" content="http://wardlin.github.io/images/node global.png">
+<meta property="og:image" content="http://wardlin.github.io/images/阿里云域名解析.png
+">
+<meta property="og:image" content="http://wardlin.github.io/images/头像更改.png">
+<meta property="og:image" content="http://wardlin.github.io/images/网易云音乐外链.png">
+<meta property="og:image" content="http://wardlin.github.io/images/algolia index.png">
+<meta property="og:image" content="http://wardlin.github.io/images/algolia keys.png">
+<meta property="og:image" content="http://wardlin.github.io/images/hexo algolia.png">
+<meta property="og:image" content="http://wardlin.github.io/images/algolia indcies.png">
+<meta property="og:image" content="http://wardlin.github.io/images/search.png">
+<meta property="og:image" content="http://wardlin.github.io/images/algolia-search link.png">
+<meta property="og:image" content="http://wardlin.github.io/images/algolia json answer.png">
+<meta property="og:updated_time" content="2017-03-21T08:31:50.293Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="hexo+github搭建个人博客(绑定域名)">
+<meta name="twitter:description" content="前言&amp;emsp;&amp;emsp;一直想自己搞个人博客，在上面记录一些自己的日常！如今，github提供了免费的域名和空间，用户可以通过username.github.io来设置自己的个人主页或博客，虽然是静态的，但是聊胜于无啊。利用github pages的特性，一开始我使用jekyll来构造整个博客静态网站，但是使用了一阵子发现有不小的局限性以及扩展性不强，于是迁移到了生态圈更大的hexo,套用了简">
+<meta name="twitter:image" content="http://wardlin.github.io/images/node global.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '99ecd8391d90bacc026b05222f34fbd1',
+      indexName: 'wardlin',
+      hits: "",
+      labels: ""
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://wardlin.github.io/hexo+github搭建个人博客(绑定域名)/"/>
+
+
+
+
+
+  <title> hexo+github搭建个人博客(绑定域名) | wardlin's blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   
     
-    <entry>
-      <title><![CDATA[hexo+github搭建个人博客(绑定域名)]]></title>
-      <url>http://wardlin.github.io/hexo+github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2(%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D)/</url>
-      <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>&emsp;&emsp;一直想自己搞个人博客，在上面记录一些自己的日常！如今，github提供了免费的域名和空间，用户可以通过username.github.io来设置自己的个人主页或博客，虽然是静态的，但是聊胜于无啊。利用github pages的特性，一开始我使用jekyll来构造整个博客静态网站，但是使用了一阵子发现有不小的局限性以及扩展性不强，于是迁移到了生态圈更大的hexo,套用了简洁美观的<a href="http://theme-next.iissnan.com/" target="_blank" rel="external">next主题</a>。同时将username.github.io挂载在了自己的私人域名下<a href="http://wardlin.site" target="_blank" rel="external">wardlin.site</a><br>&emsp;&emsp;如今博客大体框架已经搭建好了，具备了首页、个人主页、分类、音乐播放等模板。其他的一些功能如评论、分享等会陆续更新……<br><a id="more"></a><br>&emsp;&emsp;如今以这篇日记简单记录一下整个过程，以备后用！</p>
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">wardlin's blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://wardlin.github.io/hexo+github搭建个人博客(绑定域名)/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="wardlin">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="wardlin's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                hexo+github搭建个人博客(绑定域名)
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-20T22:57:37+08:00">
+                2017-03-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/blog/" itemprop="url" rel="index">
+                    <span itemprop="name">blog</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>&emsp;&emsp;一直想自己搞个人博客，在上面记录一些自己的日常！如今，github提供了免费的域名和空间，用户可以通过username.github.io来设置自己的个人主页或博客，虽然是静态的，但是聊胜于无啊。利用github pages的特性，一开始我使用jekyll来构造整个博客静态网站，但是使用了一阵子发现有不小的局限性以及扩展性不强，于是迁移到了生态圈更大的hexo,套用了简洁美观的<a href="http://theme-next.iissnan.com/" target="_blank" rel="external">next主题</a>。同时将username.github.io挂载在了自己的私人域名下<a href="http://wardlin.site" target="_blank" rel="external">wardlin.site</a><br>&emsp;&emsp;如今博客大体框架已经搭建好了，具备了首页、个人主页、分类、音乐播放等模板。其他的一些功能如评论、分享等会陆续更新……<br><a id="more"></a><br>&emsp;&emsp;如今以这篇日记简单记录一下整个过程，以备后用！</p>
 <h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><ul>
 <li>操作系统：window10 64 bit</li>
 <li><a href="http://nodejs.cn/" target="_blank" rel="external">nodejs v6.10.0</a></li>
@@ -229,124 +625,395 @@
 <li><a href="http://blog.csdn.net/tyro_java/article/details/51348477" target="_blank" rel="external">在github上搭建自己的主页和域名的绑定</a></li>
 <li><a href="http://blog.niices.com/Hexo-Next-Algolia-Search/" target="_blank" rel="external">Hexo+Next主题集成Algolia搜索</a></li>
 </ul>
-]]></content>
+
       
-        <categories>
-            
-            <category> blog </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> hexo </tag>
-            
-            <tag> github </tag>
-            
-            <tag> blog </tag>
-            
-            <tag> next </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[在标签页头部插入个性图标]]></title>
-      <url>http://wardlin.github.io/%E5%9C%A8%E6%A0%87%E7%AD%BE%E9%A1%B5%E5%A4%B4%E9%83%A8%E6%8F%92%E5%85%A5%E4%B8%AA%E6%80%A7%E5%9B%BE%E6%A0%87/</url>
-      <content type="html"><![CDATA[<hr>
-<p>&emsp;&emsp;在建立自己的个人网站时，我们都希望能够让自己的网站更个人化或者辨识度更高，那么在个人网站的标签页头部显示自己的logo便是一种很好的方法！<br><a id="more"></a></p>
-<h3 id="浏览器通用方法"><a href="#浏览器通用方法" class="headerlink" title="浏览器通用方法"></a>浏览器通用方法</h3><hr>
-<p>把favicon.ico图标放到网站根目录下，在网页的<code>&lt;head&gt;&lt;/head&gt;</code>中加入</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"shortcut icon"</span> <span class="attr">href</span>=<span class="string">"favicon.ico"</span> <span class="attr">type</span>=<span class="string">"image/x-icon"</span> /&gt;</span></div></pre></td></tr></table></figure>
-<h3 id="IE或TT浏览器"><a href="#IE或TT浏览器" class="headerlink" title="IE或TT浏览器"></a>IE或TT浏览器</h3><hr>
-<p>把需要显示的16x16像素的ICO图标命名为favicon.ico放置在网站根目录下，浏览器会自动检索</p>
-<h3 id="Firefox浏览器"><a href="#Firefox浏览器" class="headerlink" title="Firefox浏览器"></a>Firefox浏览器</h3><hr>
-<p>图标格式没有IE那么严格，GIF和PNG格式的图标也可以显示，图标名称也可以不是favcion</p>
-<p>把图标放在根目录后，在<code>&lt;head&gt;&lt;/head&gt;</code>中加入</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"shortcut icon"</span> <span class="attr">href</span>=<span class="string">"favicon.ico"</span> <span class="attr">type</span>=<span class="string">"image/x-icon"</span> /&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"icon"</span> <span class="attr">href</span>=<span class="string">"gif_favicon.gif"</span> <span class="attr">type</span>=<span class="string">"image/gif"</span> &gt;</span></div></pre></td></tr></table></figure>
-<p>或</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"shortcut icon"</span> <span class="attr">href</span>=<span class="string">"favicon.ico"</span> <span class="attr">type</span>=<span class="string">"image/x-icon"</span> /&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"icon"</span> <span class="attr">href</span>=<span class="string">"png_favicon.png"</span> <span class="attr">type</span>=<span class="string">" image/png"</span> &gt;</span></div></pre></td></tr></table></figure>
-<p><strong>实际上现在只要在网站根目录下放置一个faviocn.ico，浏览器都能识别了。</strong></p>
-]]></content>
+    </div>
+
+    <div>
       
-        <categories>
-            
-            <category> html </category>
-            
-        </categories>
         
-        
-        <tags>
-            
-            <tag> 日志 </tag>
-            
-            <tag> icon </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[如何将本地仓库的新版本推送到github上]]></title>
-      <url>http://wardlin.github.io/%E5%A6%82%E4%BD%95%E5%B0%86%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%E7%9A%84%E6%96%B0%E7%89%88%E6%9C%AC%E6%8E%A8%E9%80%81%E5%88%B0github%E4%B8%8A/</url>
-      <content type="html"><![CDATA[<hr>
-<p>&emsp;&emsp;本文主要介绍本地master分支推送更新到github上的基本命令和流程<br><a id="more"></a></p>
-<h2 id="git基本流程"><a href="#git基本流程" class="headerlink" title="git基本流程"></a>git基本流程</h2><hr>
-<p>1.在github上创建一个空项目；</p>
-<p>2.通过<code>git clone</code> 获取github项目 先复制下项目的地址</p>
-<blockquote>
-<p>命令行:<code>git clone 项目地址</code></p>
-</blockquote>
-<p>3.可以本地的项目里编写代码,创建文件了</p>
-<p>4.提交编辑的文件到git暂存区</p>
-<blockquote>
-<p>命令行:<code>git add .</code></p>
-</blockquote>
-<p>5.提交暂存区的文件到本地git</p>
-<blockquote>
-<p>命令行:<code>git commit -m &quot;提交说明&quot;</code></p>
-</blockquote>
-<p>6.提交本地git到远程服务器 github</p>
-<blockquote>
-<p>命令行:<code>git push origin master</code></p>
-</blockquote>
-<p>输入账号密码</p>
-<p><em>PS</em>：每次执行完命令行应该都看下执行状态</p>
-<blockquote>
-<p>命令行:<code>git status</code></p>
-</blockquote>
-<p>第一次提交项目到远程服务器的时候可以需要配置用户名和邮箱 不提示就不需要配置</p>
-<blockquote>
-<p>命令行：<br><code>git config --global user.name &quot;用户名&quot;</code><br><code>git config --global user.email &quot;邮箱&quot;</code></p>
-</blockquote>
-<h2 id="git基本操作命令行图"><a href="#git基本操作命令行图" class="headerlink" title="git基本操作命令行图"></a>git基本操作命令行图</h2><hr>
-<p><img src="/images/Git常用命令.jpg" width="50%" height="50%" align="center/"></p>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><hr>
-<ul>
-<li><a href="http://blog.csdn.net/u011974987/article/details/50973740" target="_blank" rel="external">版本控制工具Git 常用操作命令</a></li>
-<li><a href="http://git.oschina.net/progit/" target="_blank" rel="external">Pro Git（中文版）</a></li>
-</ul>
-]]></content>
+
       
-        <categories>
-            
-            <category> Git </category>
-            
-        </categories>
+    </div>
+
+    <div>
+      
         
+
+      
+    </div>
+
+    <div>
+      
         
-        <tags>
-            
-            <tag> git </tag>
-            
-            <tag> 日志 </tag>
-            
-        </tags>
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/hexo/" rel="tag"># hexo</a>
+          
+            <a href="/tags/github/" rel="tag"># github</a>
+          
+            <a href="/tags/blog/" rel="tag"># blog</a>
+          
+            <a href="/tags/next/" rel="tag"># next</a>
+          
+        </div>
+      
+
+      
         
-    </entry>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/在标签页头部插入个性图标/" rel="next" title="在标签页头部插入个性图标">
+                <i class="fa fa-chevron-left"></i> 在标签页头部插入个性图标
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+          
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
     
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="wardlin" />
+          <p class="site-author-name" itemprop="name">wardlin</p>
+           
+              <p class="site-description motion-element" itemprop="description">to be coding...</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/wardlin" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/lin-fan-4-59" target="_blank" title="知乎">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  知乎
+                </a>
+              </span>
+            
+          
+        </div>
+        
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=86 height=86 src="//music.163.com/outchain/player?type=2&id=29743607&auto=0&height=66"></iframe>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#准备"><span class="nav-number">2.</span> <span class="nav-text">准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#搭建博客框架"><span class="nav-number">3.</span> <span class="nav-text">搭建博客框架</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo-安装"><span class="nav-number">3.1.</span> <span class="nav-text">hexo 安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#本地运行hexo"><span class="nav-number">3.2.</span> <span class="nav-text">本地运行hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#初始化hexo"><span class="nav-number">3.2.1.</span> <span class="nav-text">初始化hexo</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#运行hexo"><span class="nav-number">3.2.2.</span> <span class="nav-text">运行hexo</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#管理博客"><span class="nav-number">3.3.</span> <span class="nav-text">管理博客</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建github-io库"><span class="nav-number">3.4.</span> <span class="nav-text">创建github.io库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#绑定个人域名和github地址"><span class="nav-number">3.5.</span> <span class="nav-text">绑定个人域名和github地址</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用next主题"><span class="nav-number">3.6.</span> <span class="nav-text">使用next主题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#下载next主题包"><span class="nav-number">3.6.1.</span> <span class="nav-text">下载next主题包</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#选择Scheme"><span class="nav-number">3.6.2.</span> <span class="nav-text">选择Scheme</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置头像"><span class="nav-number">3.6.3.</span> <span class="nav-text">设置头像</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加「标签」页面"><span class="nav-number">3.6.4.</span> <span class="nav-text">添加「标签」页面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加「分类」页面"><span class="nav-number">3.6.5.</span> <span class="nav-text">添加「分类」页面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加「音乐」功能"><span class="nav-number">3.6.6.</span> <span class="nav-text">添加「音乐」功能</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加-社交链接"><span class="nav-number">3.6.7.</span> <span class="nav-text">添加 社交链接</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加「搜索」页面"><span class="nav-number">3.6.8.</span> <span class="nav-text">添加「搜索」页面</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">4.</span> <span class="nav-text">参考</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <link href="/css/search.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/js/src/algolia-search.js"></script>
+
+<div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">wardlin</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
   
   
-</search>
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=5.1.0"></script>
+
+
+
+  
+
+</body>
+</html>
